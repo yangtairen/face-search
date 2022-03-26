@@ -6,36 +6,28 @@ spring:
   profiles:
     active: @profileActive@
   redis:
-    password: 123456
+    password: Try@113388redis
     port: 6379
-    host: localhost
+    host: 175.178.244.204
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/db_face_search_service?useSSL=false&characterEncoding=utf8&serverTimezone=GMT%2B8
+    url: jdbc:mysql://175.178.244.204:3306/db_face_search_service?useSSL=false&characterEncoding=utf8&serverTimezone=GMT%2B8
     username: root
-    password: 123456
+    password: Try@113388mysql
     type: com.alibaba.druid.pool.DruidDataSource
-    #���ͳ�����ص�filters
     filters: stat,wall,log4j
-    #druid����
-    #���ó�ʼ����С/��С/���
     initialSize: 5
     minIdle: 5
     maxActive: 20
-    #��ȡ���ӵȴ���ʱʱ��
     maxWait: 60000
-    #�����ý���һ�μ�⣬�����Ҫ�رյĿ�������
     timeBetweenEvictionRunsMillis: 60000
-    #һ�������ڳ�����С�����ʱ��
     minEvictableIdleTimeMillis: 300000
     validationQuery: SELECT 1 FROM DUAL
     testWhileIdle: true
     testOnBorrow: false
     testOnReturn: false
-    #��PSCache����ָ��ÿ��������PSCache�Ĵ�С��oracle��Ϊtrue��mysql��Ϊfalse���ֿ�ֱ�϶��Ƽ�����Ϊfalse
     poolPreparedStatements: false
     maxPoolPreparedStatementPerConnectionSize: 20
-    # ͨ��connectProperties��������mergeSql���ܣ���SQL��¼
     connectionProperties:
       druid:
         stat:
@@ -44,9 +36,9 @@ spring:
   mail:
     default-encoding: UTF-8
     port: 465
-    host: smtp.mxhichina.com
-    username: 123456
-    password: 123456
+    host: smtp.qq.com
+    username: tairenyang@foxmail.com
+    password: trglclarrbqsbfjg
     properties:
       mail:
         smtp:
@@ -57,10 +49,10 @@ spring:
           socketFactory:
             class: javax.net.ssl.SSLSocketFactory
             port: 465
-# Ӧ���Զ������
+
 site:
   face:
-    host: localhost
+    host: 124.222.132.21
     port: 5002
     http: http://
 mybatis-plus:

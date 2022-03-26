@@ -2,9 +2,9 @@ import numpy as np
 import json
 import pymysql
 
-db_host = 'localhost'
+db_host = '175.178.244.204'
 db_user = 'root'
-db_password = '123456'
+db_password = 'Try@113388mysql'
 db_name = 'db_face_search_service'
 
 
